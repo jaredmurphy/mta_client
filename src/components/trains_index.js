@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchTrains } from '../actions/index';
 
-export default class TrainsIndex extends Component {
+class TrainsIndex extends Component {
+  componentWillMount() {
+    this.props.fetchTrains()
+  }
+
+  componentDidMount() {
+    console.log(this.props.trains)
+  }
+
   render() {
     return (
       <div>
@@ -9,3 +19,9 @@ export default class TrainsIndex extends Component {
     );
   }
 }
+
+function mapStateToProps(state){
+  return { trains: state.trains };
+}
+
+export default connect(mapStateToProps, { fetchTrains })(TrainsIndex);
