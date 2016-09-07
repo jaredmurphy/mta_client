@@ -8,6 +8,15 @@ class TrainsIndex extends Component {
     this.props.fetchTrains();
   }
 
+  splitStatus(status){
+    let statusArr = [];
+    status.split("<br>").forEach(item => {
+      statusArr.push(item)
+    });
+    return statusArr;
+  }
+  // <div className="status"> { line.status.split("<br>")[0] } </div>
+  // <div className="status"> { line.status.split("<br>")[0] } </div>
 
   renderTrains() {
     console.log("trains", this.props.lines)
@@ -18,7 +27,8 @@ class TrainsIndex extends Component {
           <div className="trainname" key={line.name}>
             < Link to={line.name} >
             <div className="letter" id={ line.name.toLowerCase() }> { line.name } </div>
-            <div className="status"> { line.status} </div>
+            <div className="status"> { line.status.replace("<br>", "\n") } </div>
+
             </ Link >
           </div>
         );
