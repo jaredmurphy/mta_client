@@ -3,7 +3,12 @@ import React, { Component } from 'react';
 export default class App extends Component {
   render() {
     return (
-      <div>Your Pleasant Ghost evironment is set up correctly.</div>
+      <div>
+        <h1> MTA STATUS </h1>
+        <div>
+          { this.props.children }
+        </div>
+    </div>
     );
   }
 }
