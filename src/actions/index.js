@@ -15,11 +15,9 @@ export function fetchBg() {
 }
 
 export function fetchTrains() {
-  axios.defaults.headers.common['Content'] = 'application/json';
   const request = axios.get(`${MTA_STATUS_URL}`);
-  debugger;
   return {
-    type: FETCH_TRAINS,
+    type: 'FETCH_TRAINS',
     payload: request
   };
 }

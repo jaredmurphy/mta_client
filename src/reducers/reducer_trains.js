@@ -1,11 +1,11 @@
 import { FETCH_TRAINS } from '../actions/index';
-const INITIAL_STATE = { all: [], post: null };
+const INITIAL_STATE = { all: [], train: null };
 
-export default function(state = null, action) {
+export default function(state = INITIAL_STATE, action) {
+  if (action.payload) {console.log('trains', action.payload.data)}
    switch(action.type) {
-     case FETCH_TRAINS:
-       debugger;
-       return { ...state, trains: action.payload.data  };
+     case 'FETCH_TRAINS':
+       return { ...state, all: action.payload.data  };
      default:
        return state;
    }

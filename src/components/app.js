@@ -28,8 +28,10 @@ class App extends Component {
   }
 }
 
-function mapStateToProps(state){
-  return { bgImage: state.bgImage };
-}
+// function mapStateToProps(state){
+//   return { bgImage: state.bgImage };
+// }
+//
+// export default connect(mapStateToProps, { fetchBg })(App);
 
-export default connect(mapStateToProps, { fetchBg })(App);
+export default App;
