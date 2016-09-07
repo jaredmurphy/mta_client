@@ -1,24 +1,14 @@
-#Pleasant Ghost
-Boilerplate that handles Node.js environment set up so you can start developing your front end NOW.
+# MTA STATUS Client App
+Rebuilding the front end for [MTA STATUS](http://www.mtastat.us/) in a separate Node app with React, Redux, and Webpack.
 
-###What You Get
-* React, React-DOM, React-Router
-* Redux, Redux-Promise, Redux-Form
-* Babel
-* Webpack
-* Axios
-* jQuery
-* Materialize
-* Lodash
-* Mocha
-* Chai
+### Need to do
+* ~~Render Index route for all trains~~
+* Render Show route for single train
+* Download random background image from [Unsplash](https://unsplash.com/)
+* Write unit tests for React components
+* Write request tests for Axios calls
+* Write integration tests for React + Redux + Axios
+* Styling
 
-###Usage
-- Clone this repo
-- npm install
-- npm start
-- Go to localhost:8080
-- See your first working React component in action
-
-###Contribute
+### Contribute
 Fork, make changes, submit pull request.

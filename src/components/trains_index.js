@@ -8,16 +8,6 @@ class TrainsIndex extends Component {
     this.props.fetchTrains();
   }
 
-  splitStatus(status){
-    let statusArr = [];
-    status.split("<br>").forEach(item => {
-      statusArr.push(item)
-    });
-    return statusArr;
-  }
-  // <div className="status"> { line.status.split("<br>")[0] } </div>
-  // <div className="status"> { line.status.split("<br>")[0] } </div>
-
   renderTrains() {
     console.log("trains", this.props.lines)
     if (this.props.lines.all){
