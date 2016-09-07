@@ -21,7 +21,7 @@ class App extends Component {
         <div className="container">
           { this.props.children }
         </div>
-        <div className="bg" style={ {backgroundImage: "url(https://media.timeout.com/images/102920649/image.jpg)" } }></div>
+        <div className="bg" style={ { backgroundImage: "url(https://media.timeout.com/images/102920649/image.jpg)" } }></div>
         <div className="screen"></div>
     </div>
     );

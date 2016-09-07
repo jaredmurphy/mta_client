@@ -10,9 +10,10 @@ class TrainsIndex extends Component {
 
   renderTrains() {
     console.log("trains", this.props.lines)
-    if (this.props.lines.all){
+    if (this.props.lines){
       console.log("props.train not null", this.props.lines)
-      return this.props.lines.all.map((line, i) => {
+      return this.props.lines.map((line, i) => {
+        { if (line.name === "A" || line.name === "G") { <br className="for_desktop" /> } }
         return (
           <div className="trainname" key={line.name}>
             < Link to={line.name} >
@@ -38,7 +39,7 @@ class TrainsIndex extends Component {
 }
 
 function mapStateToProps(state){
-  return { lines: state.trains };
+  return { lines: state.trains.all };
 }
 
 export default connect(mapStateToProps, { fetchTrains })(TrainsIndex);

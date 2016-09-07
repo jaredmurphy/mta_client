@@ -1,14 +1,18 @@
 import { FETCH_TRAINS } from '../actions/index';
 import { linesToJson } from '../helpers';
-const INITIAL_STATE = { all: [], train: null };
+
+const INITIAL_STATE = { all: [], currentTrain: null };
 
 export default function(state = INITIAL_STATE, action) {
   if (action.payload) {
-    var trainData = linesToJson(action.payload.data);
   }
    switch(action.type) {
      case 'FETCH_TRAINS':
+       var trainData = linesToJson(action.payload.data);
        return { ...state, all: trainData };
+     case 'FETCH_SINGLE_TRAIN':
+        console.log("single train", action.payload.data);
+        return {...state, currentTrain: action.payload.data}
      default:
        return state;
    }
