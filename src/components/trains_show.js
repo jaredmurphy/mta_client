@@ -3,7 +3,7 @@ import { fetchSingleTrain } from '../actions/index';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import Train from './train';
-import DetailStatus from './detail_status';
+import LongStatus from './long_status';
 
 class TrainsShow extends Component {
   componentWillMount() {
@@ -15,7 +15,10 @@ class TrainsShow extends Component {
       return <div>Loading...</div>;
     }
     return (
-      < Train thisTrain={this.props.train} />
+      <div>
+        < Train thisTrain={this.props.train} />
+        < LongStatus thisTrain={this.props.train} />
+      </div>
     );
   }
 }

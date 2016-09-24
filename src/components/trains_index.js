@@ -13,9 +13,7 @@ class TrainsIndex extends Component {
 
 
   renderTrains() {
-    console.log("trains", this.props.lines)
     if (this.props.lines){
-      console.log("props.train not null", this.props.lines)
       return this.props.lines.map((line, i) => {
         { if (line.name === "A" || line.name === "G") { <br className="for_desktop" /> } }
         return (
