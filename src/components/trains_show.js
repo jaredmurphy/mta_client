@@ -3,6 +3,7 @@ import { fetchSingleTrain } from '../actions/index';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import Train from './train';
+import DetailStatus from './detail_status';
 
 class TrainsShow extends Component {
   componentWillMount() {
