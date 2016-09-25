@@ -10,14 +10,12 @@ class TrainsIndex extends Component {
     this.props.fetchTrains();
   }
 
-
-
   renderTrains() {
     if (this.props.lines){
       return this.props.lines.map((line, i) => {
         { if (line.name === "A" || line.name === "G") { <br className="for_desktop" /> } }
         return (
-          < Train thisTrain={line} />
+          < Train thisTrain={line} key={line.name} />
         );
       });
     } else {

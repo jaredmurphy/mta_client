@@ -10,16 +10,28 @@ class TrainsShow extends Component {
     this.props.fetchSingleTrain(this.props.params.name);
   }
 
+  renderTrainWithStatus = () => {
+    if (this.props.train.long_status) {
+      return (
+        <div>
+          < Train thisTrain={this.props.train} />
+          < LongStatus thisTrain={this.props.train} />
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          < Train thisTrain={this.props.train} />
+        </div>
+      )
+    }
+  }
+
   render() {
     if (!this.props.train){
       return <div>Loading...</div>;
     }
-    return (
-      <div>
-        < Train thisTrain={this.props.train} />
-        < LongStatus thisTrain={this.props.train} />
-      </div>
-    );
+    return this.renderTrainWithStatus();
   }
 }
 

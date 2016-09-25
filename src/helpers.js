@@ -9,7 +9,6 @@ export function linesToJson(lines) {
 }
 
 export function selectColor(lineName){
-  console.log("color", lineName)
   switch(lineName) {
     case '1': case '2':  case '3':
         return {backgroundColor: '#EC000A'};

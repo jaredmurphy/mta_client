@@ -11,7 +11,6 @@ export default function(state = INITIAL_STATE, action) {
        var trainData = linesToJson(action.payload.data);
        return { ...state, all: trainData };
      case 'FETCH_SINGLE_TRAIN':
-        console.log("single train", action.payload.data);
         return {...state, currentTrain: action.payload.data}
      default:
        return state;
