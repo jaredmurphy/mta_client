@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const IMG_API_URL = "https://source.unsplash.com/category/buildings/1600x1200/?new+york"
-const MTA_STATUS_URL = "http://www.mtastat.us/api/trains"
+const MTA_STATUS_URL = "https://www.mtastat.us/api/trains"
 
 export const FETCH_BG = 'FETCH_BG';
 export const FETCH_TRAINS = 'FETCH_TRAINS';
