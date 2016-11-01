@@ -4,6 +4,9 @@
   "description": "React-Redux Client for MTAStat.us",
   "main": "index.js",
   "repository": "git@github.com:jaredmurphy/mta_client.git",
+  "engines": {
+    "node": "6.2.1"
+  },
   "scripts": {
     "start": "node server.js",
     "postinstall": "webpack -p"
