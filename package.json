@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "postinstall": "webpack -p"
+    "postinstall": "node_modules/.bin/webpack"
   },
   "author": "Jared Murphy",
   "license": "ISC",
