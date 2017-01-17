@@ -1,5 +1,7 @@
 # MTA STATUS Client App
-New front end for [MTA STATUS](http://www.mtastat.us/) in a separate Node app with React, Redux, and Webpack.
+[link to site](http://mta_status.surge.sh/)
+
+New front end for [MTA STATUS](http://www.mtastat.us/) as a stand alone client-side app with React, Redux, and Webpack.
 
 MTA STATUS Sinatra API can be found [here](https://github.com/JohnrBell/mta_do)
 
