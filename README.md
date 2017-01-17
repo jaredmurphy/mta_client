@@ -8,10 +8,7 @@ MTA STATUS Sinatra API can be found [here](https://github.com/JohnrBell/mta_do)
 * ~~Render Index route for all trains~~
 * ~~Render Show route for single train~~
 * Download random background image from [Unsplash](https://unsplash.com/)
-* Cache API data
-* Write unit tests for React components
-* Write request tests for Axios calls
-* Write integration tests for React + Redux + Axios
+* Tests
 * ~~Styling~~
 
 ### Contribute
